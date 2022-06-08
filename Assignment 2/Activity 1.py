@@ -1,3 +1,3 @@
 
-# This program displays "Hello World!"
-print("Hello World!")
+# This program displays "Hello Vi!"
+print("Hello Vi!")
