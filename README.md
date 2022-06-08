@@ -6,3 +6,7 @@ The reason why I want to take this class is partly because it is one of the requ
 
 ## Assignment 2
 
+The language that I choose will be the Python programming language, because of its variety and versatility in its programming applications. Python for me is a programming language with strong advantages such as easy to read, easy to remember and easy to learn. Compared to other languages, Python has less syntactic structure. Python's structure allows the user to write code with the least number of keystrokes. In addition, Python has powerful high-level data structures and a simple yet effective approach to object-oriented programming. For me, Python is an easy language for beginners, and it would be a great starting point for me.
+
+I am still confused about choosing an IDE for my programming language, so far there are 2 IDEs that I feel most comfortable with, Pycharm and Thonny. Both include the basic functions needed by the IDE such as error detection, syntax error highlighting, automatic code completion support, etc. But personally, I think I would still choose Thonny because of its simplicity and accessibility to newbies like me. Also maybe in the future when I'm comfortable with the Python programming language I'll start thinking about switching to a more advanced and versatile IDE. But for now I will and continue to use the Thonney IED as a tool for learning to code in our class.
+
