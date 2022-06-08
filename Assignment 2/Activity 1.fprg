@@ -4,15 +4,15 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-06-07 12:22:57 PM"/>
-        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNRU0VISEs7MjAyMi0wNi0wNzsxMjowMjozOCBQTTszMzU3"/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNRU0VISEs7MjAyMi0wNi0wNzsxMjoyMjo1NyBQTTs2OzM0NzM="/>
+        <attribute name="saved" value="2022-06-07 10:03:56 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg3SjEwMkw7MjAyMi0wNi0wNzswOTozODoyOSBQTTszMjkz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUg3SjEwMkw7MjAyMi0wNi0wNzsxMDowMzo1NiBQTTsxOzMzODU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="This program displays &quot;Hello World!&quot;"/>
-            <output expression="&quot;Hello World!&quot;" newline="True"/>
+            <comment text="This program displays &quot;Hello Vi!&quot;"/>
+            <output expression="&quot;Hello Vi!&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
