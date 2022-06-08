@@ -1,4 +1,4 @@
-# CIS106-VIMAI
+# CIS106 VI MAI
 
 ## Assignment 1
 
