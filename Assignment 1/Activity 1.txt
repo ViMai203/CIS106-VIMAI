@@ -13,7 +13,7 @@ Put the water bottle in the trash
 Close the trash can lid
 Cover the kettle again
 Start boiling the kettle
-Turn off the hot water kettle after boiling
+Turn off the kettle after boiling
 Take the tea pot
 Open the lid of the teapot
 Get a kettle
@@ -21,23 +21,23 @@ Open the lid of the kettle
 Pour hot water to half the teapot
 Put kettle down
 Close the lid of the tea pot
-Pick up the teapot
-Swirls the whole teapot
+Pick up the tea pot
+Swirls the whole tea pot
 Go to the sink
 Open the lid of the tea pot
 Pour out the water
 Go back to where the kettle is left
-Open the lid of the tea
+Open the lid of the tea pot
 Pour hot water into three quarters of a pot of tea
 Close the lid of the kettle
 Put the kettle aside
 Take the black tea pack
-Put the black tea bag in the teapot
+Put the black tea bag in the tea pot
 Close the lid of the tea pot
 Adjust the time 5 minutes
 Soak for 5 minutes
 Open the lid of the tea pot
-ake out the tea bag
+Take out the tea bag
 Take a small glass
 Put the black tea pack in the tea pot
 Set aside
