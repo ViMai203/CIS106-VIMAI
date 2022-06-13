@@ -15,10 +15,10 @@ Cover the kettle again
 Start boiling the kettle
 Turn off the kettle after boiling
 Take the tea pot
-Open the lid of the teapot
+Open the lid of the tea pot
 Get a kettle
 Open the lid of the kettle
-Pour hot water to half the teapot
+Pour hot water to half the tea pot
 Put kettle down
 Close the lid of the tea pot
 Pick up the tea pot
