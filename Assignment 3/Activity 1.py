@@ -1,17 +1,11 @@
-hours = 0 
-rate = 0
-#reading hours and rates from user
-hours = int(input("Enter daily hours: "))
-rate = float(input("Enter rate: "))
-#finding daily salary
-daily = hours * rate;
-#finding monthly salary
-monthly = daily * 30
-#finding weekly salary
-weekly = daily * 7
-#finding annual salary
-annualy = weekly * 52
-
-print("Weekly gross salary: $",weekly)
-print("Monthly gross salary: $",monthly)
-print("Annual gross salary: $",annualy)
+# This program is used to calculate monthly. weekly and anual gross for user
+print("Enter hours worked per week: ")
+hour = int(input())
+print("Enter rate per hour: ")
+rate = int(input())
+week = hour * rate
+year = 52 * week
+month = year / 12
+print("Weekly gross pay: " + str(week))
+print("Monthly gross pay: " + str(month))
+print("Anual gross pay; " + str(year))
