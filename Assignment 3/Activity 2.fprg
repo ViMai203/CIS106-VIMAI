@@ -5,31 +5,31 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-06-14 05:46:33 AM"/>
-        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNToxNjozNCBBTTszMjg4"/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNTo0NjozMyBBTTsyOzMzOTk="/>
+        <attribute name="saved" value="2022-06-14 06:15:23 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNTo1MDozMyBBTTszMjg1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNjoxNToyMyBBTTsyOzMzOTU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="Age" type="Integer" array="False" size=""/>
-            <declare name="Ages" type="Real" array="False" size=""/>
-            <declare name="Months" type="Real" array="False" size=""/>
-            <declare name="Days" type="Real" array="False" size=""/>
-            <declare name="Hours" type="Real" array="False" size=""/>
-            <declare name="Seconds" type="Real" array="False" size=""/>
+            <comment text="This program used to calculate month, day, hours and second of age."/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="month" type="Real" array="False" size=""/>
+            <declare name="day" type="Real" array="False" size=""/>
+            <declare name="hour" type="Real" array="False" size=""/>
+            <declare name="second" type="Real" array="False" size=""/>
             <output expression="&quot;Enter age:&quot;" newline="True"/>
-            <input variable="Age"/>
-            <assign variable="Ages" expression="age"/>
-            <assign variable="Months" expression="Age*12"/>
-            <assign variable="Days" expression="age*12*365+age/4"/>
-            <assign variable="Hours" expression="(age*12*365+age/4)*24"/>
-            <assign variable="Seconds" expression="(age*12*365+age/4)*24*60*60"/>
+            <input variable="age"/>
+            <assign variable="age" expression="age"/>
+            <assign variable="month" expression="age*12"/>
+            <assign variable="day" expression="age*12*365+age/4"/>
+            <assign variable="hour" expression="(age*12*365+age/4)*24"/>
+            <assign variable="second" expression="(age*12*365+age/4)*24*60*60"/>
             <output expression="&quot;Person is &quot;&amp;age &amp;&quot; years old&quot;" newline="True"/>
-            <output expression="&quot;Person is &quot;&amp;Months &amp;&quot; months old&quot;" newline="True"/>
-            <output expression="&quot;Person is &quot;&amp;Days &amp;&quot; days old&quot;" newline="True"/>
-            <output expression="&quot;Seconds is &quot;&amp;Hours &amp;&quot; hours old&quot;" newline="True"/>
-            <output expression="&quot;Person is &quot;&amp;Seconds &amp;&quot; seconds old&quot;" newline="True"/>
+            <output expression="&quot;Person is &quot;&amp;month &amp;&quot; months old&quot;" newline="True"/>
+            <output expression="&quot;Person is &quot;&amp;day &amp;&quot; days old&quot;" newline="True"/>
+            <output expression="&quot;Person is &quot;&amp;hour &amp;&quot; hours old&quot;" newline="True"/>
+            <output expression="&quot;Person is &quot;&amp;second &amp;&quot; seconds old&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
