@@ -1,3 +1,4 @@
+
 #Asking user age
 age=float(input("Enter age:"))
 print("Person is ",age,"years old.")
