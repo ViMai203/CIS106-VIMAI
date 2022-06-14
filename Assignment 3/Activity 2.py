@@ -1,7 +1,6 @@
 # This program used to asking user age.
-print("Enter age: ")
+print("Enter age:")
 age = int(input())
-age = age
 month = age * 12
 day = age * 12 * 365 + float(age) / 4
 hour = (age * 12 * 365 + float(age) / 4) * 24
