@@ -5,14 +5,14 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-06-14 06:18:58 AM"/>
+        <attribute name="saved" value="2022-06-14 06:21:59 AM"/>
         <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNTo1MDozMyBBTTszMjg1"/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNjoxODo1OCBBTTsyOzM0MDY="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNjoyMTo1OSBBTTszOzM0MDI="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="This program used to calculate month, day, hours and second of age."/>
+            <comment text="This program used to asking user age."/>
             <declare name="age" type="Integer" array="False" size=""/>
             <declare name="month" type="Real" array="False" size=""/>
             <declare name="day" type="Real" array="False" size=""/>
