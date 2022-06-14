@@ -2,7 +2,7 @@
 print("Enter hours worked per week: ")
 hour = int(input())
 print("Enter rate per hour: ")
-rate = int(input())
+rate = float(input())
 week = hour * rate
 year = 52 * week
 month = year / 12
