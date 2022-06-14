@@ -1,0 +1,33 @@
+
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-14 07:49:40 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNzoyMToxMyBBTTszMjgz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNzo0OTo0MCBBTTsxOzM0MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program is used to calculate monthly. weekly and anual gross for user"/>
+            <output expression="&quot;Enter hours worked per week: &quot;" newline="True"/>
+            <declare name="hour" type="Integer" array="False" size=""/>
+            <input variable="hour"/>
+            <output expression="&quot;Enter rate per hour: &quot;" newline="True"/>
+            <declare name="rate" type="Integer" array="False" size=""/>
+            <input variable="rate"/>
+            <declare name="week" type="Real" array="False" size=""/>
+            <declare name="month" type="Real" array="False" size=""/>
+            <declare name="year" type="Real" array="False" size=""/>
+            <assign variable="week" expression="hour*rate"/>
+            <assign variable="year" expression="52*week"/>
+            <assign variable="month" expression="year/12"/>
+            <output expression="&quot;Weekly gross pay: &quot;&amp;week" newline="True"/>
+            <output expression="&quot;Monthly gross pay: &quot;&amp;month" newline="True"/>
+            <output expression="&quot;Anual gross pay; &quot;&amp;year" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
