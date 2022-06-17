@@ -1,19 +1,13 @@
 
 #This software will calculate the age of dog breed according to human age.
-name =(input("Enter dog's name:"))
-age = int(input("Enter dog's age:"))
-if age < 0 :
-    raise ValueError
-elif age <= 1 :
-    dog_age_in_Human_years = age * 15.0
-elif age <= 2 :
-    dog_age_in_Human_years = age * 12.0
-elif age <= 3 :
-    dog_age_in_Human_years = age * 9.3
-elif age <= 4 :
-    dog_age_in_Human_years = age * 8
-elif age <= 5 :
-    dog_age_in_Human_years = age * 7.2
+hage = int(input("Input a dog's age in human years: "))
+
+if hage < 0:
+	print("Age must be positive number.")
+	exit()
+elif hage <= 2:
+	dage = hage * 10.5
 else:
-    dog_age_in_Human_years  = 4 * 7 + (float(age) - 5) * 7
-print(str(name)+" is "+ str( dog_age_in_Human_years)+" years old in dog years")
+	dage = 21 + (hage - 2)*4
+
+print("The dog's age in dog's years is", dage)
