@@ -1,5 +1,5 @@
 
-#a program that calculate and determine how much paint is required to paint a room and how much it will cost.
+#A program that calculate and determine how much paint is required to paint a room and how much it will cost.
 length =float(input("Enter the length of the room:"))
 width =float(input("Enter the width of the room:"))
 height =float(input("Enter the height of the room:"))
