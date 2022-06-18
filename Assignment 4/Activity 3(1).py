@@ -1,5 +1,5 @@
 
-#a program calculate and display the distance from miles in to yards, feet, and inches
+#a program calculate and display the distance from miles into yards, feet, and inches
 miles = int(input("Input miles: "))
 inches = miles * 63.360
 yards = miles * 1.760
