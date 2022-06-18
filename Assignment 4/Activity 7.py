@@ -1,19 +1,9 @@
 
-#This software will calculate the age of dog breed according to human age.
-name =(input("Enter dog's name:"))
-age = int(input("Enter dog's age:"))
-if age < 0 :
-    raise ValueError
-elif age <= 1 :
-    dog_age_in_Human_years = age * 15.0
-elif age <= 2 :
-    dog_age_in_Human_years = age * 12.0
-elif age <= 3 :
-    dog_age_in_Human_years = age * 9.3
-elif age <= 4 :
-    dog_age_in_Human_years = age * 8
-elif age <= 5 :
-    dog_age_in_Human_years = age * 7.2
-else:
-    dog_age_in_Human_years  = 4 * 7 + (float(age) - 5) * 7
-print(str(name)+" is "+ str( dog_age_in_Human_years)+" years old in dog years")
+#a program calculate and display the distance from miles in to yards, feet, and inches
+miles = int(input("Input miles: "))
+inches = miles * 63.360
+yards = miles * 1.760
+feet = miles * 5.280
+print("The distance in inches is " +str(inches) +" in")
+print("The distance in yards is " +str(yards) +" yd")
+print("The distance in feet is " +str(feet) +" ft")
