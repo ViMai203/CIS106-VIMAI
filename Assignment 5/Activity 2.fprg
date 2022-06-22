@@ -1,0 +1,34 @@
+
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-21 09:52:38 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNTo1MDozMyBBTTszMjg1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNjoxNToyMyBBTTsyOzMzOTU="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJWRzg5TEc7MjAyMi0wNi0yMTswOTo1MjozOCBQTTsxOzM0MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program used to calculate month, day, hours and second of age."/>
+            <output expression="&quot;What's your age ?:&quot;" newline="True"/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <input variable="age"/>
+            <declare name="months" type="Real" array="False" size=""/>
+            <assign variable="months" expression="age*12"/>
+            <declare name="days" type="Real" array="False" size=""/>
+            <assign variable="days" expression="age*365"/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <assign variable="hours" expression="age * 24 * 365"/>
+            <declare name="seconds" type="Integer" array="False" size=""/>
+            <assign variable="seconds" expression="age * 365 * 24 * 60 * 60"/>
+            <output expression="&quot;You are &quot;&amp;months &amp;&quot; months old.&quot;" newline="True"/>
+            <output expression="&quot;You are &quot;&amp;days &amp;&quot; days old.&quot;" newline="True"/>
+            <output expression="&quot;You are &quot;&amp;hours &amp;&quot; hours old.&quot;" newline="True"/>
+            <output expression="&quot;You are &quot;&amp;seconds &amp;&quot; seconds old.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
