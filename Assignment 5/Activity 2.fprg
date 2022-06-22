@@ -2,33 +2,112 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="2.11">
     <attributes>
-        <attribute name="name" value=""/>
+        <attribute name="name" value="vi"/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-06-21 09:52:38 PM"/>
+        <attribute name="saved" value="2022-06-22 12:40:13 AM"/>
         <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNTo1MDozMyBBTTszMjg1"/>
         <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVFIODE0REY7MjAyMi0wNi0xNDswNjoxNToyMyBBTTsyOzMzOTU="/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJWRzg5TEc7MjAyMi0wNi0yMTswOTo1MjozOCBQTTsxOzM0MzY="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJWRzg5TEc7MjAyMi0wNi0yMjsxMjo0MDoxMyBBTTszOzM0MDg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <comment text="This program used to calculate month, day, hours and second of age."/>
-            <output expression="&quot;What's your age ?:&quot;" newline="True"/>
-            <declare name="age" type="Integer" array="False" size=""/>
-            <input variable="age"/>
+            <declare name="age" type="Real" array="False" size=""/>
             <declare name="months" type="Real" array="False" size=""/>
-            <assign variable="months" expression="age*12"/>
             <declare name="days" type="Real" array="False" size=""/>
-            <assign variable="days" expression="age*365"/>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <declare name="seconds" type="Real" array="False" size=""/>
+            <assign variable="age" expression="Getage()"/>
+            <assign variable="months" expression="calmonths(age)"/>
+            <assign variable="days" expression="caldays(age)"/>
+            <assign variable="hours" expression="calhours(age)"/>
+            <assign variable="seconds" expression="calseconds(age)"/>
+            <call expression="DisplayResultmonths(age, months)"/>
+            <call expression="DisplayResultdays(age, days)"/>
+            <call expression="DisplayResulthours(age, hours)"/>
+            <call expression="DisplayResultseconds(age, seconds)"/>
+        </body>
+    </function>
+    <function name="caldays" type="Real" variable="days">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="days" type="Real" array="False" size=""/>
+            <assign variable="days" expression="age * 365"/>
+        </body>
+    </function>
+    <function name="calhours" type="Real" variable="hours">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+        </parameters>
+        <body>
             <declare name="hours" type="Real" array="False" size=""/>
             <assign variable="hours" expression="age * 24 * 365"/>
-            <declare name="seconds" type="Integer" array="False" size=""/>
+        </body>
+    </function>
+    <function name="calmonths" type="Real" variable="months">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="months" type="Real" array="False" size=""/>
+            <assign variable="months" expression="age * 12"/>
+        </body>
+    </function>
+    <function name="calseconds" type="Real" variable="seconds">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="seconds" type="Real" array="False" size=""/>
             <assign variable="seconds" expression="age * 365 * 24 * 60 * 60"/>
-            <output expression="&quot;You are &quot;&amp;months &amp;&quot; months old.&quot;" newline="True"/>
-            <output expression="&quot;You are &quot;&amp;days &amp;&quot; days old.&quot;" newline="True"/>
-            <output expression="&quot;You are &quot;&amp;hours &amp;&quot; hours old.&quot;" newline="True"/>
-            <output expression="&quot;You are &quot;&amp;seconds &amp;&quot; seconds old.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="DisplayResultmonths" type="None" variable="">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+            <parameter name="months" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;You are &quot;&amp;months&amp;&quot; months old&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="DisplayResultdays" type="None" variable="">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+            <parameter name="days" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;You are &quot;&amp;days&amp;&quot; days old&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="DisplayResulthours" type="None" variable="">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+            <parameter name="hours" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;You are &quot;&amp;hours&amp;&quot; hours old&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="DisplayResultseconds" type="None" variable="">
+        <parameters>
+            <parameter name="age" type="Real" array="False"/>
+            <parameter name="seconds" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;You are &quot;&amp;seconds&amp;&quot; seconds old&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="Getage" type="Real" variable="age">
+        <parameters/>
+        <body>
+            <declare name="age" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter age: &quot;" newline="True"/>
+            <input variable="age"/>
         </body>
     </function>
 </flowgorithm>
