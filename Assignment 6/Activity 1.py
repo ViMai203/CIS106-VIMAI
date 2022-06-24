@@ -6,6 +6,10 @@
 #
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions
+def get_hours():
+    print ("Enter hours worked per week: ")
+    hours = float(input())
+    return hours
 def get_rate():
     print ("Enter rate per hour: ")
     rate = float(input())
