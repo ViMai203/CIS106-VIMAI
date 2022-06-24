@@ -3,7 +3,8 @@
 # Calculate their weekly, monthly, and annual gross pay.
 # Display their weekly, monthly, and annual gross pay.
 #
-#
+# References:
+# https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions
 def get_rate():
     print ("Enter rate per hour: ")
     rate = float(input())
