@@ -44,10 +44,10 @@ def cal_price(number, price_per_gallon):
     price = number*price_per_gallon
     return price
     
-def display_result(number):
+def display_result_1(number):
     print("Total paint required to paint the room is " +str(number))
     
-def display_result(price):
+def display_result_2(price):
     print("Total price for the paint required is: " +str(price))
     
 def main() :
@@ -59,7 +59,7 @@ def main() :
     area_total = cal_area_total(length, height, width)
     number = cal_number(area_total, number_square_feet_per_gallon)
     price = cal_price(number, price_per_gallon)
-    display_result(number)
-    display_result(price)
+    display_result_1(number)
+    display_result_2(price)
     
 main()
