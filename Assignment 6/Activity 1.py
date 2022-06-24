@@ -28,6 +28,7 @@ def cal_year(week):
     year = 52 * week
     return year
     
+    
 def cal_month(year):
     month = year / 12
     return month
@@ -45,7 +46,7 @@ def display_result_3(year):
     print("Annual gross pay: " + str(year))
     
     
-def main() :
+def main():
     hours = get_hours()
     rate = get_rate()
     week = cal_week(hours, rate)
