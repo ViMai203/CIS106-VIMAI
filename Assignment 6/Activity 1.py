@@ -6,18 +6,23 @@
 #
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions
+
 def get_hours():
     print ("Enter hours worked per week: ")
     hours = float(input())
     return hours
+
+
 def get_rate():
     print ("Enter rate per hour: ")
     rate = float(input())
     return rate
+
     
 def cal_week(hours, rate):
     week = hours * rate
     return week
+
     
 def cal_year(week):
     year = 52 * week
@@ -26,15 +31,19 @@ def cal_year(week):
 def cal_month(year):
     month = year / 12
     return month
+
     
 def display_result_1(week):
     print("Weekly gross pay: "+str(week))
     
+    
 def display_result_2(month):
     print("Monthly gross pay: "+str(month))
     
+    
 def display_result_3(year):
     print("Annual gross pay: "+str(year))
+    
     
 def main() :
     hours = get_hours()
@@ -45,5 +54,6 @@ def main() :
     display_result_1(week)
     display_result_2(month)
     display_result_3(year)
+    
     
 main()
