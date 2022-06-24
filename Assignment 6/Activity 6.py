@@ -12,43 +12,53 @@ def get_length():
     length = float(input())
     return length
     
+    
 def get_width():
     print ("Enter the width of the room: ")
     width = float(input())
     return width
+    
     
 def get_height():
     print ("Enter the height of the room: ")
     height = float(input())
     return height
     
+    
 def get_price_per_gallon():
     print ("Enter the price per gallon of paint: ")
     price_per_gallon = float(input())
     return price_per_gallon
+    
     
 def get_number_square_feet_per_gallon():
     print ("Enter the number of square feet that a gallon of paint will cover: ")
     number_square_feet_per_gallon = float(input())
     return number_square_feet_per_gallon
     
+    
 def cal_area_total(length, height, width):
-    area_total = 2*length*height + 2*width*height
+    area_total = 2 * length * height + 2 * width*height
     return area_total
     
+    
 def cal_number(area_total, number_square_feet_per_gallon):
-    number = int((area_total/number_square_feet_per_gallon) + 0.999)
+    number = int((area_total / number_square_feet_per_gallon) + 0.999)
     return number
     
+    
 def cal_price(number, price_per_gallon):
-    price = number*price_per_gallon
+    price = number * price_per_gallon
     return price
     
+    
 def display_result_1(number):
-    print("Total paint required to paint the room is " +str(number))
+    print("Total paint required to paint the room is " + str(number))
+    
     
 def display_result_2(price):
-    print("Total price for the paint required is: " +str(price))
+    print("Total price for the paint required is: " + str(price))
+    
     
 def main() :
     length = get_length()
@@ -61,5 +71,6 @@ def main() :
     price = cal_price(number, price_per_gallon)
     display_result_1(number)
     display_result_2(price)
-    
+   
+
 main()
