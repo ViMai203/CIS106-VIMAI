@@ -38,7 +38,7 @@ def get_number_gallon():
     
     
 def cal_area(length, height, width):
-    area = 2 * length * height + 2 * width*height
+    area = 2 * length * height + 2 * width * height
     return area
     
     
