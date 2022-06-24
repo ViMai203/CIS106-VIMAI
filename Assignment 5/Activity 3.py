@@ -26,7 +26,7 @@ def cal_feet(miles):
     return feet
 
 
-def display_result_1(inches):
+def display_result_i(inches):
     print("The distance in inches is " + str(inches) +" in")
     
     
