@@ -25,30 +25,30 @@ def get_height():
     return height
     
     
-def get_price_per_gallon():
+def get_price_gallon():
     print ("Enter the price per gallon of paint: ")
-    price_per_gallon = float(input())
-    return price_per_gallon
+    price_gallon = float(input())
+    return price_gallon
     
     
-def get_number_square_feet_per_gallon():
+def get_number_gallon():
     print ("Enter the number of square feet that a gallon of paint will cover: ")
-    number_square_feet_per_gallon = float(input())
-    return number_square_feet_per_gallon
+    number_gallon = float(input())
+    return number_gallon
     
     
-def cal_area_total(length, height, width):
-    area_total = 2 * length * height + 2 * width*height
-    return area_total
+def cal_area(length, height, width):
+    area = 2 * length * height + 2 * width*height
+    return area
     
     
-def cal_number(area_total, number_square_feet_per_gallon):
-    number = int((area_total / number_square_feet_per_gallon) + 0.999)
+def cal_number(area, number_gallon):
+    number = int((area / number_gallon) + 0.999)
     return number
     
     
-def cal_price(number, price_per_gallon):
-    price = number * price_per_gallon
+def cal_price(number, price_gallon):
+    price = number * price_gallon
     return price
     
     
@@ -64,11 +64,11 @@ def main() :
     length = get_length()
     width = get_width()
     height = get_height()
-    price_per_gallon = get_price_per_gallon()
-    number_square_feet_per_gallon = get_number_square_feet_per_gallon()
-    area_total = cal_area_total(length, height, width)
-    number = cal_number(area_total, number_square_feet_per_gallon)
-    price = cal_price(number, price_per_gallon)
+    price_gallon = get_price_gallon()
+    number_gallon = get_number_gallon()
+    area = cal_area(length, height, width)
+    number = cal_number(area, number_gallon)
+    price = cal_price(number, price_gallon)
     display_result_1(number)
     display_result_2(price)
    
