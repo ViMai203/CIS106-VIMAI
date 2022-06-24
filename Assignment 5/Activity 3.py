@@ -12,17 +12,17 @@ def get_miles():
 
 
 def cal_inches(miles):
-    inches = miles * 63.360
+    inches = miles * 63360
     return inches
 
 
 def cal_yards(miles):
-    yards = miles * 1.760
+    yards = miles * 1760
     return yards
 
 
 def cal_feet(miles):
-    feet = miles * 5.280
+    feet = miles * 5280
     return feet
 
 
