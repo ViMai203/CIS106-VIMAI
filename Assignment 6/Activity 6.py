@@ -8,31 +8,31 @@
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions
 def get_length():
-    print ("Enter the length of the room: ")
+    print("Enter the length of the room: ")
     length = float(input())
     return length
     
     
 def get_width():
-    print ("Enter the width of the room: ")
+    print("Enter the width of the room: ")
     width = float(input())
     return width
     
     
 def get_height():
-    print ("Enter the height of the room: ")
+    print("Enter the height of the room: ")
     height = float(input())
     return height
     
     
 def get_price_gallon():
-    print ("Enter the price per gallon of paint: ")
+    print("Enter the price per gallon of paint: ")
     price_gallon = float(input())
     return price_gallon
     
     
 def get_number_gallon():
-    print ("Enter the number of square feet that a gallon of paint will cover: ")
+    print("Enter the number of square feet that a gallon of paint will cover: ")
     number_gallon = float(input())
     return number_gallon
     
@@ -60,7 +60,7 @@ def display_result_2(price):
     print("Total price for the paint required is: " + str(price))
     
     
-def main() :
+def main():
     length = get_length()
     width = get_width()
     height = get_height()
