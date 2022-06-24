@@ -27,15 +27,15 @@ def cal_feet(miles):
 
 
 def display_result_i(inches):
-    print("The distance in inches is " + str(inches) +" in")
+    print("The distance in inches is " + str(inches) +"in")
     
     
 def display_result_y(yards):
-    print("The distance in yards is " + str(yards) +" yd")
-   
-
+    print("The distance in yards is " + str(yards) +"yd")
+    
+    
 def display_result_f(feet):
-    print("The distance in feet is " + str(feet) +" ft")
+    print("The distance in feet is " + str(feet) +"ft")
     
     
 def main():
@@ -46,7 +46,6 @@ def main():
     display_result_i(inches)
     display_result_y(yards)
     display_result_f(feet)
-    
-    
+
 main()
    
