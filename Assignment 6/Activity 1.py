@@ -34,15 +34,15 @@ def cal_month(year):
 
     
 def display_result_1(week):
-    print("Weekly gross pay: "+str(week))
+    print("Weekly gross pay: " + str(week))
     
     
 def display_result_2(month):
-    print("Monthly gross pay: "+str(month))
+    print("Monthly gross pay: " + str(month))
     
     
 def display_result_3(year):
-    print("Annual gross pay: "+str(year))
+    print("Annual gross pay: " + str(year))
     
     
 def main() :
