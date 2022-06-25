@@ -19,42 +19,42 @@ def get_rate():
     return rate
 
     
-def cal_week(hours, rate):
+def calculate_week(hours, rate):
     week = hours * rate
     return week
 
     
-def cal_year(week):
+def calculate_year(week):
     year = 52 * week
     return year
     
     
-def cal_month(year):
+def calculate_month(year):
     month = year / 12
     return month
 
     
-def display_result_1(week):
+def display_weekly(week):
     print("Weekly gross pay: " + str(week))
     
     
-def display_result_2(month):
+def display_monthly(month):
     print("Monthly gross pay: " + str(month))
     
     
-def display_result_3(year):
+def display_yearly(year):
     print("Annual gross pay: " + str(year))
     
     
 def main():
     hours = get_hours()
     rate = get_rate()
-    week = cal_week(hours, rate)
-    year = cal_year(week)
-    month = cal_month(year)
-    display_result_1(week)
-    display_result_2(month)
-    display_result_3(year)
+    week = calculate_week(hours, rate)
+    year = calculate_year(week)
+    month = calculate_month(year)
+    display_weekly(week)
+    display_monthly(month)
+    display_yearly(year)
     
     
 main()
