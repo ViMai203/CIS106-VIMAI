@@ -749,6 +749,28 @@ def check_source_code_comma_formatting(assignment, activity):
         f"has non-standard spacing around commas.\nFound: {matches}"
 
 
+def check_source_code_references(assignment, activity):
+    path = get_path(assignment)
+    if not path:
+        pytest.skip()
+        return
+
+    filename = get_filename(path, activity + r"\.(cs|java|js|lua|py)")
+    if not filename:
+        pytest.skip()
+        return
+
+    text = read_file(path, filename)
+
+    pattern = r"[\/\/|#]\s*references.+?\n?[\/\/|#]?\s*.+?\n"
+    matches = re.findall(pattern, text, re.DOTALL | re.IGNORECASE)
+    assert len(matches) >= 1, \
+        f"{assignment} {activity} requires references. Include 'References:' " \
+        f"in source code comments followed by references to all sources used. " \
+        "Sources include books, website links, and the names of any people " \
+        "(tutors / friends / family members, etc.) who provide assistance."
+
+
 def check_python_formatting(assignment, activity):
     path = get_path(assignment)
     if not path:
@@ -940,7 +962,7 @@ def check_source_code_comments(assignment, activity, count,
     elif ".lua" in filename:
         pattern = "^--"
     elif ".py" in filename:
-        pattern = "^#"
+        pattern = r"^#|^'''|^\"\"\""
     else:
         pattern = r"^\s*\/\/"
 
