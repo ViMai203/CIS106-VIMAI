@@ -5,7 +5,7 @@
 #
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Conditions
-def choice() :
+def choice():
     print("M - For Age in months")
     print("D - For Age in days")
     print("H - For Age in hours")
@@ -14,62 +14,62 @@ def choice() :
     return c
 
 
-def age() :
+def age():
     print("Enter age in year: ")
     a = float(input())
     return a
 
     
-def months(a) :
+def months(a):
     mo = a * 12
     return mo
 
     
-def days(a) :
+def days(a):
     da = a * 365
     return da
     
     
-def hours(a) :
+def hours(a):
     ho = a * 365 * 24
     return ho
 
 
-def seconds(a) :
+def seconds(a):
     se = a * 365 * 24 * 60 * 60
     return se
     
 
-def display1(mo) :
+def display1(mo):
     print("You are " + str(mo) + " months old")
     
 
-def display2(da) :
+def display2(da):
     print("You are " + str(da) + " days old")
     
     
-def display3(ho) :
+def display3(ho):
     print("You are " + str(ho) + " hours old")
     
     
-def display4(se) :
+def display4(se):
     print("You are " + str(se) + " seconds old")
 
     
 def main():
     a = age()
     c = choice()
-    if c == "M" or c == "m" :
+    if c == "M" or c == "m":
         mo = months(a)
         display1(mo)
-    elif c == "D" or c == "d" :
+    elif c == "D" or c == "d":
         da = days(a)
         display2(da)
-    elif c == "H" or c == "h" :
+    elif c == "H" or c == "h":
         ho = hours(a)
         display3(ho)
-    elif c == "S" or c == "s" :
-        se = econds(a)
+    elif c == "S" or c == "s":
+        se = seconds(a)
         display4(se)
     else:
         print("You must enter the answears.")
