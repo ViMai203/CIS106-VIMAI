@@ -5,73 +5,72 @@
 #
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Conditions
-def get_choice() :
-    print("Would you like to know your age in (M)onths, (D)ays, (H)ours, or (S)econds")
+def choice() :
     print("M - For Age in months")
     print("D - For Age in days")
     print("H - For Age in hours")
     print("S - For Age in seconds")
-    choice = input()
-    return choice
+    c = input()
+    return c
 
 
-def get_age():
+def age() :
     print("Enter age in year: ")
-    age = float(input())
-    return age
+    a = float(input())
+    return a
 
     
-def cal_months(age):
-    months = age * 12
-    return months
+def months(a) :
+    mo = a * 12
+    return mo
 
     
-def cal_days(age):
-    days = age * 365
-    return days
+def days(a) :
+    da = a * 365
+    return da
     
     
-def cal_hours(age):
-    hours = age * 365 * 24
-    return hours
+def hours(a) :
+    ho = a * 365 * 24
+    return ho
 
 
-def cal_seconds(age):
-    seconds = age * 365 * 24 * 60 * 60
-    return seconds
+def seconds(a) :
+    se = a * 365 * 24 * 60 * 60
+    return se
     
 
-def display_months(months):
-    print("You are " + str(months) + " months old")
+def display1(mo) :
+    print("You are " + str(mo) + " months old")
     
 
-def display_days(days):
-    print("You are " + str(days) + " days old")
+def display2(da) :
+    print("You are " + str(da) + " days old")
     
     
-def display_hours(hours):
-    print("You are " + str(hours) + " hours old")
+def display3(ho) :
+    print("You are " + str(ho) + " hours old")
     
     
-def display_seconds(seconds):
-    print("You are " + str(seconds) + " seconds old")
+def display4(se) :
+    print("You are " + str(se) + " seconds old")
 
     
 def main():
-    age = get_age()
-    choice = get_choice()
-    if choice == "M" or choice == "m":
-        months = cal_months(age)
-        display_months(months)
-    elif choice == "D" or choice == "d":
-        days = cal_days(age)
-        display_days(days)
-    elif choice == "H" or choice == "h":
-        hours = cal_hours(age)
-        display_hours(hours)
-    elif choice == "S" or choice == "s":
-        seconds = cal_seconds(age)
-        display_seconds(seconds)
+    a = age()
+    c = choice()
+    if c == "M" or c == "m" :
+        mo = months(a)
+        display1(mo)
+    elif c == "D" or c == "d" :
+        da = days(a)
+        display2(da)
+    elif c == "H" or c == "h" :
+        ho = hours(a)
+        display3(ho)
+    elif c == "S" or c == "s" :
+        se = econds(a)
+        display4(se)
     else:
         print("You must enter the answears.")
         
