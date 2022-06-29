@@ -1,4 +1,3 @@
-
 # A program that asks the user how old they are in years.
 # Ask the user if they would like to know how old they are in (M)onths, (D)ays, (H)ours, or (S)econds.
 # Use if/else conditional statements to calculate.
@@ -22,22 +21,22 @@ def get_age():
     return age
 
     
-def calculate_months(age):
+def cal_months(age):
     months = age * 12
     return months
 
     
-def calculate_days(age):
+def cal_days(age):
     days = age * 365
     return days
     
     
-def calculate_hours(age):
+def cal_hours(age):
     hours = age * 365 * 24
     return hours
 
 
-def calculate_seconds(age):
+def cal_seconds(age):
     seconds = age * 365 * 24 * 60 * 60
     return seconds
     
@@ -59,22 +58,19 @@ def display_seconds(seconds):
 
     
 def main():
+    age = get_age()
     choice = get_choice()
     if choice == "M" or choice == "m":
-        age = get_age()
-        months = calculate_months(age)
+        months = cal_months(age)
         display_months(months)
     elif choice == "D" or choice == "d":
-        age = get_age()
-        days = calculate_days(age)
+        days = cal_days(age)
         display_days(days)
     elif choice == "H" or choice == "h":
-        age = get_age()
-        hours = calculate_hours(age)
+        hours = cal_hours(age)
         display_hours(hours)
     elif choice == "S" or choice == "s":
-        age = get_age()
-        seconds = calculate_seconds(age)
+        seconds = cal_seconds(age)
         display_seconds(seconds)
     else:
         print("You must enter the answears.")
