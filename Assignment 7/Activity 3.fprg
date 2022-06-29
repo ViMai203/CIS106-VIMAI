@@ -1,0 +1,84 @@
+
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-29 02:30:14 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVJBUFZSN0I7MjAyMi0wNi0yOTswMToyMDo1NiBBTTszMzU3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVJBUFZSN0I7MjAyMi0wNi0yOTswMjozMDoxNCBBTTsyOzM0NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A program that asks the user for a distance in miles, and then ask the user if they want the distance in US measurements(yards, feet, and inches) or in metric measurements (kilometers, meters, and centimeters)"/>
+            <declare name="choice" type="String" array="False" size=""/>
+            <assign variable="choice" expression="GetChoice()"/>
+            <if expression="Choice = &quot;A&quot; Or Choice = &quot;a&quot;">
+                <then>
+                    <call expression="ProcessA()"/>
+                </then>
+                <else>
+                    <if expression="Choice = &quot;B&quot; Or Choice = &quot;b&quot;">
+                        <then>
+                            <call expression="ProcessB()"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;You must choose A or B to get the right answer for you.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="GetChoice" type="String" variable="choice">
+        <parameters/>
+        <body>
+            <declare name="choice" type="String" array="False" size=""/>
+            <output expression="&quot;Enter (A) if you want the distance in us measurements (yards, feet, and inches.&quot;" newline="True"/>
+            <output expression="&quot;Enter (B) if you want the distance in metric measurements (kilometers, meters, and centimeters.&quot;" newline="True"/>
+            <input variable="Choice"/>
+        </body>
+    </function>
+    <function name="GetMiles" type="Real" variable="miles">
+        <parameters/>
+        <body>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter distance in miles: &quot;" newline="True"/>
+            <input variable="miles"/>
+        </body>
+    </function>
+    <function name="ProcessA" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <declare name="inches" type="Real" array="False" size=""/>
+            <declare name="yards" type="Real" array="False" size=""/>
+            <declare name="Feet" type="Real" array="False" size=""/>
+            <assign variable="miles" expression="GetMiles()"/>
+            <assign variable="inches" expression="miles * 63360"/>
+            <assign variable="yards" expression="miles * 1760"/>
+            <assign variable="feet" expression="miles * 5280"/>
+            <output expression="&quot;The distance in inches is &quot; &amp;inches&amp; &quot; in.&quot;" newline="True"/>
+            <output expression="&quot;The distance in yards is &quot; &amp;yards&amp; &quot; yd.&quot;" newline="True"/>
+            <output expression="&quot;The distance in feet is &quot; &amp;feet&amp; &quot; ft.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="ProcessB" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <declare name="kilometers" type="Real" array="False" size=""/>
+            <declare name="meters" type="Real" array="False" size=""/>
+            <declare name="centimeters" type="Real" array="False" size=""/>
+            <assign variable="miles" expression="GetMiles()"/>
+            <assign variable="kilometers" expression="miles * 1.60934"/>
+            <assign variable="meters" expression="miles * 1609.34"/>
+            <assign variable="centimeters" expression="miles * 160934"/>
+            <output expression="&quot;The distance in kilometers is &quot; &amp;kilometers&amp; &quot; km.&quot;" newline="True"/>
+            <output expression="&quot;The distance in meters is &quot; &amp;meters&amp; &quot; m.&quot;" newline="True"/>
+            <output expression="&quot;The distance in centimeters is &quot; &amp;centimeters&amp; &quot; cm.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
