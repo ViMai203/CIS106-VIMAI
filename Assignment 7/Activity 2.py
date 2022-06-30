@@ -1,12 +1,16 @@
 # A program that asks the user how old they are in years.
-# Ask the user if they would like to know how old they are in (M)onths, (D)ays, (H)ours, or (S)econds.
+# Ask the user if they would like to know how old they are in
+# (M)onths, (D)ays, (H)ours, or (S)econds.
 # Use if/else conditional statements to calculate.
 # Display their approximate age in the selected timeframe.
 #
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Conditions
+
+
 def get_choice():
-    print("Would you like to know your age in (M)onths, (D)ays, (H)ours, or (S)econds")
+    print("Would you like to know your age in "
+        "(M)onths, (D)ays, (H)ours, or (S)econds")
     print("M - For Age in months")
     print("D - For Age in days")
     print("H - For Age in hours")
