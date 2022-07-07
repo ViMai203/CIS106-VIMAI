@@ -6,8 +6,8 @@
 # References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Loops
 # https://www.mathsisfun.com/definitions/average.html
-numbers = int(input('How many grades you would like to enter: '))
-grades = [-1]*numbers
+numbers = int(input("How many grades you would like to enter: "))
+grades = [-1] * numbers
 Ave = 0
 
 
