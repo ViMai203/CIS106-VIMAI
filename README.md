@@ -29,3 +29,7 @@ I think for me limiting my use of Flowchart slightly reduces my programming capa
 ## Assignment 7
 
   It can be said that this time the lesson was one of the more difficult ones for me, because I had to come up with the right code at the same time and try to limit the number of lines I had to set up. . Building a code structure based on making a choice and the outcome for that choice is quite difficult for me. But after all I'm still good at my job, my weakness is just that the code is too long, so I will try to fix that. The change here is that aside from learning new things, most things remain the same. I think one thing that is similar to the previous articles is that using FLO will take more time to calculate than IDEs. Of course I will reuse this code structure, or will spend more time trying to reduce the number of sentences I need to reuse.
+
+## Assignment 8
+
+  This is a big challenge for me personally, I really have a problem using Loop with few details. I spent hours thinking about how to best fit it, and I was unable to apply the Functions from the last lesson this time. I thought it would be easier if I forced myself to use Functions in conjunction with loop, and I didn't use it at all this time. Simply because I want to start with the basics first, so the code in this section will be very short compared to usual, I will still focus on how to develop it. I find it difficult to insist but it is still very interesting for me, and I will use it again and again here again.
