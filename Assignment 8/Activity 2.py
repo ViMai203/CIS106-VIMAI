@@ -8,13 +8,13 @@
 # https://www.mathsisfun.com/definitions/average.html
 numbers = int(input("How many grades you would like to enter: "))
 grades = [-1] * numbers
-Ave = 0
+ave = 0
 
 
 for i in range(numbers):
     grades[i] = int(input('Enter grade: '))
-    Ave = Ave + grades[i]
-    Ave1 = Ave / numbers
+    ave = ave + grades[i]
+    ave1 = ave / numbers
      
      
-print("Average value: " + str(Ave1))
+print("Average value: " + str(ave1))
