@@ -8,16 +8,14 @@
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Loops
 # https://www.mathsisfun.com/definitions/average.html
 numbers = int(input('How many grades you would like to enter: '))
-
-grades = [-1] * numbers
-
+grades = [-1]*numbers
 Average = 0
+
 
 for i in range(numbers):
      grades[i] = int(input('Enter grade: '))
      Average = Average + grades[i]
-     Average = Average / numbers
-
-
-
-print('Average Grade:', Average)
+     Average2 = Average / numbers
+     
+     
+print('Average Grade:', Average2)
