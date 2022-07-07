@@ -13,8 +13,7 @@ Average = 0
 
 for i in range(numbers):
      grades[i] = int(input('Enter grade: '))
-     Average = Average + grades[i]
-     Average2 = Average / numbers
+     Average = numbers / grades[i]
      
      
-print('Average Grade:', Average2)
+print("Average value: " + str(Average))
