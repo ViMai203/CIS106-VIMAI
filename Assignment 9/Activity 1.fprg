@@ -1,0 +1,32 @@
+
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-06 03:20:31 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUs3NzVBQlQ7MjAyMi0wNy0wNjswMzowMjoyOSBBTTszMjky"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUs3NzVBQlQ7MjAyMi0wNy0wNjswMzoyMDozMSBBTTszOzMzOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A program aske the user to enter the value andthe number of expressions to be dispayed."/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <declare name="expressions" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value: &quot;" newline="True"/>
+            <input variable="value"/>
+            <output expression="&quot;Enter the number of expressions: &quot;" newline="True"/>
+            <input variable="expressions"/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <assign variable="number" expression="1"/>
+            <while expression="number &lt;= expressions">
+                <declare name="result" type="Real" array="False" size=""/>
+                <assign variable="result" expression="value * number"/>
+                <output expression="value&amp;&quot; * &quot;&amp;number&amp;&quot; = &quot;&amp;result" newline="True"/>
+                <assign variable="number" expression="number + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
