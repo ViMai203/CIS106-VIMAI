@@ -1,17 +1,18 @@
-<?xml version="1.0"?>
+?xml version="1.0"?>
 <flowgorithm fileversion="2.11">
     <attributes>
         <attribute name="name" value=""/>
         <attribute name="authors" value="PhotonUser"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-07-08 01:00:28 AM"/>
+        <attribute name="saved" value="2022-07-08 01:06:18 AM"/>
         <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUs3NzVBQlQ7MjAyMi0wNy0wNjswMzowMjoyOSBBTTszMjky"/>
         <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUs3NzVBQlQ7MjAyMi0wNy0wNjswMzoxMzo0OCBBTTsxOzM0MDM="/>
-        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTY3RFMwMzM7MjAyMi0wNy0wODswMTowMDoyOCBBTTsxOzMzNTQ="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTY3RFMwMzM7MjAyMi0wNy0wODswMTowNjoxOCBBTTszOzMzNjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
+            <comment text="This a program that uses a loop to generate a list of multiplication expressions for a given value."/>
             <declare name="value" type="Integer" array="False" size=""/>
             <declare name="expressions" type="Integer" array="False" size=""/>
             <output expression="&quot;Enter the value: &quot;" newline="True"/>
@@ -19,9 +20,10 @@
             <output expression="&quot;Enter the number of expressions: &quot;" newline="True"/>
             <input variable="expressions"/>
             <declare name="i" type="Integer" array="False" size=""/>
-            <declare name="" type="Integer" array="False" size=""/>
             <for variable="i" start="1" end="expressions" direction="inc" step="1">
-                <output expression="value&amp; &quot; * &quot; &amp;i&amp; &quot; = &quot; &amp;(value * i)" newline="True"/>
+                <declare name="result" type="Real" array="False" size=""/>
+                <assign variable="result" expression="value * i"/>
+                <output expression="value&amp; &quot; * &quot; &amp;i&amp; &quot; = &quot; &amp;result" newline="True"/>
             </for>
         </body>
     </function>
