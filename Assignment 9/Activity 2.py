@@ -6,15 +6,15 @@
 # References
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Loops#For_Loops
 # https://www.mathsisfun.com/definitions/average.html
-number = int(input("Enter the number of grades: "))
-i = 0
+number = int(input("Enter the number of grade: "))
+numbers = 0
 
 
-while i < number:
+while numbers < number:
     grade = int(input("Enter the grades: "))
-    total = i + grade
+    total = numbers + grade
     avg = total / number
-    i += 1
+    numbers += 1
     
 
-print("Average grade: " +str(avg))   
+print("Average grade: " + str(avg))   
