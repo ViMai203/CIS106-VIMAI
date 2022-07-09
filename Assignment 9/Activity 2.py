@@ -8,13 +8,14 @@
 # https://www.mathsisfun.com/definitions/average.html
 number = int(input("Enter the number of grade: "))
 numbers = 0
+total = 0
 
 
 while numbers < number:
     grade = int(input("Enter the grades: "))
-    total = numbers + grade
+    total = total + grade
     avg = total / number
     numbers += 1
     
 
-print("Average grade: " + str(avg))   
+print("Average grade: " + str(total))   
