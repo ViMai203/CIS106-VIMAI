@@ -1,7 +1,7 @@
 # A program that uses a loop to generate a list of multiplication expressions for a given value. 
 # Ask the user to enter the value and the number of expressions to be displayed.
 #
-# Reference:
+# References:
 # https://en.wikiversity.org/wiki/Programming_Fundamentals/Loops#For_Loops
 print("Enter the value: ")
 value = int(input())
