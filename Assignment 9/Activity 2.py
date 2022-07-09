@@ -18,4 +18,4 @@ while numbers < number:
     numbers += 1
     
 
-print("Average grade: " + str(total))   
+print("Average grade: " + str(avg))   
